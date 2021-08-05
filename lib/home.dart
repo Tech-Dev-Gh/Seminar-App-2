@@ -16,12 +16,12 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: PageView.builder(
         itemCount: cardList.length,
-        controller: PageController(viewportFraction: 0.7),
+        controller: PageController(viewportFraction: 0.78),
         onPageChanged: (int index) => setState(() => _index = index),
         itemBuilder: (_, i) {
           var currentCard = cardList[i];
           return Transform.scale(
-            scale: i == _index ? 1.09 : 0.7,
+            scale: i == _index ? 1.05 : 0.78,
             child: Column(
               children: [
                 Spacer(),
@@ -58,8 +58,8 @@ class _HomeState extends State<Home> {
                 Spacer(),
                 Expanded(
                   flex: 4,
-                  child: GestureDetector(
-                    onTap: () {
+                  child: ElevatedButton(
+                    onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -68,15 +68,20 @@ class _HomeState extends State<Home> {
                                     image: currentCard.cardImg,
                                   )));
                     },
-                    child: Card(
-                      elevation: 8,
-                      color: currentCard.cardColor,
+                    style: ElevatedButton.styleFrom(
+                      elevation: 8.0,
+                      padding: EdgeInsets.all(20.0),
+                      primary: currentCard.cardColor,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Hero(
-                        tag: currentCard.cardImg!,
-                        transitionOnUserGestures: true,
-                        child: Image.asset(currentCard.cardImg!),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                    child: Hero(
+                      tag: currentCard.cardImg!,
+                      transitionOnUserGestures: true,
+                      child: Image.asset(
+                        currentCard.cardImg!,
+                        width: 250,
                       ),
                     ),
                   ),

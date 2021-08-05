@@ -20,8 +20,13 @@ final cardList = [
     cardColor: Color(0xff2d4c86),
   ),
   CustomCard(
-    cardHeader: "Jack Jack",
-    cardImg: "assets/images/jack-jack.png",
+    cardHeader: "Enemy",
+    cardImg: "assets/images/mario-bros.png",
+    cardColor: Color(0xffb26944),
+  ),
+  CustomCard(
+    cardHeader: "Mr. Incredible",
+    cardImg: "assets/images/mr incredible.png",
     cardColor: Color(0xffdf3023),
   ),
   CustomCard(
@@ -30,19 +35,29 @@ final cardList = [
     cardColor: Color(0xffba462d),
   ),
   CustomCard(
-    cardHeader: "Iron Man",
-    cardImg: "assets/images/ironman.png",
-    cardColor: Color(0xffe03a2a),
+    cardHeader: "Jack Jack",
+    cardImg: "assets/images/jack-jack.png",
+    cardColor: Color(0xffdf3023),
   ),
   CustomCard(
-    cardHeader: "Enemy",
-    cardImg: "assets/images/mario-bros.png",
-    cardColor: Color(0xffb26944),
+    cardHeader: "Moana",
+    cardImg: "assets/images/moana.png",
+    cardColor: Color(0xffbb6845),
   ),
   CustomCard(
-    cardHeader: "Thor",
-    cardImg: "assets/images/thor.png",
-    cardColor: Color(0xffbad2cd),
+    cardHeader: "Mougli",
+    cardImg: "assets/images/mougli.png",
+    cardColor: Color(0xff597540),
+  ),
+  CustomCard(
+    cardHeader: "Minion",
+    cardImg: "assets/images/minion.png",
+    cardColor: Color(0xff528ab5),
+  ),
+  CustomCard(
+    cardHeader: "Minion (Bob)",
+    cardImg: "assets/images/minion1.png",
+    cardColor: Color(0xff2b4056),
   ),
   CustomCard(
     cardHeader: "Spiderman",
